@@ -18,8 +18,8 @@ if __name__ == '__main__':
     items = save_a.get_items()
     for item in items:
         balance = item.balance
-        if "Repellant" in item.balance_short:
-            print("ok")
+        # if "Repellant" in item.balance_short:
+        #     print("ok")
         all_parts = db.get_parts(item.balance_short)
         if not all_parts:
             print("--- No data about {}".format(item.balance_short))
